@@ -26,6 +26,9 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     private Text AnswerText = default;
 
+    [SerializeField]
+    private Animator ani = default;
+
     //hardcoded
 
     int stress = 2;
@@ -54,4 +57,10 @@ public class DialogueManager : MonoBehaviour
         }
         AnswerText.text = "stress: " + stress;
     }
+
+    public void FreezeFrame()
+        {
+        //load correct data.
+        ani.Play("VideoScaleDown");
+        }
 }
