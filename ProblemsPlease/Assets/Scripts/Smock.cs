@@ -19,12 +19,36 @@ public class ScenarioMock
     public string failHighText;
     public string winText;
     public int score;
+
+    public List<ScenarioPhase> phases;
+
+    public ScenarioMock(string scenarioName, string scenarioDes, int maxStress, int startStress, string failLowText, string failHighText, string winText, int score)
+    {
+        this.scenarioName = scenarioName;
+        this.scenarioDes = scenarioDes;
+        this.maxStress = maxStress;
+        this.startStress = startStress;
+        this.failLowText = failLowText;
+        this.failHighText = failHighText;
+        this.winText = winText;
+        this.score = score;
+        this.phases = new List<ScenarioPhase>();
+    }
 }
 
 [System.Serializable]
 public class ScenarioPhase
 {
-    //Confrontation is saved here
+    public bool confrontationPossible;
+    public int phaseTime;
+    public List<ScenarioButton> buttons;
+
+    public ScenarioPhase(bool confrontationPossible, int phaseTime)
+    {
+        this.confrontationPossible = confrontationPossible;
+        this.phaseTime = phaseTime;
+        this.buttons = new List<ScenarioButton>();
+    }
 }
 
 [System.Serializable]
@@ -33,5 +57,13 @@ public class ScenarioButton
     public string buttonText;
     public bool buttonEnabled;
     public string videoName;
+    public string answerText;
 
+    public ScenarioButton(string buttonText, bool buttonEnabled, string videoName, string answerText)
+    {
+        this.buttonText = buttonText;
+        this.buttonEnabled = buttonEnabled;
+        this.videoName = videoName;
+        this.answerText = answerText;
+    }
 }
