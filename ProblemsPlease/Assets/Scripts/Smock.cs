@@ -19,10 +19,11 @@ public class ScenarioMock
     public string failHighText;
     public string winText;
     public int score;
+    public string introText;
 
     public List<ScenarioPhase> phases;
 
-    public ScenarioMock(string scenarioName, string scenarioDes, int maxStress, int startStress, string failLowText, string failHighText, string winText, int score)
+    public ScenarioMock(string scenarioName, string scenarioDes, int maxStress, int startStress, string failLowText, string failHighText, string winText, int score, string introText)
     {
         this.scenarioName = scenarioName;
         this.scenarioDes = scenarioDes;
@@ -32,6 +33,7 @@ public class ScenarioMock
         this.failHighText = failHighText;
         this.winText = winText;
         this.score = score;
+        this.introText = introText;
         this.phases = new List<ScenarioPhase>();
     }
 }
