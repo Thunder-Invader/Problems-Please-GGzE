@@ -41,12 +41,17 @@ public class ScenarioMock
 [System.Serializable]
 public class ScenarioPhase
 {
+    public int phaseNumber;
+    public int stress;
     public bool confrontationPossible;
     public int phaseTime;
     public List<ScenarioButton> buttons;
+    //button on index 0 is low stress option, on 1 neutral on 2 stressful on 3 confrontation
 
-    public ScenarioPhase(bool confrontationPossible, int phaseTime)
+    public ScenarioPhase(int phaseNumber, int stress, bool confrontationPossible, int phaseTime)
     {
+        this.phaseNumber = phaseNumber;
+        this.stress = stress;
         this.confrontationPossible = confrontationPossible;
         this.phaseTime = phaseTime;
         this.buttons = new List<ScenarioButton>();
