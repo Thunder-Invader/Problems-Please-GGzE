@@ -56,6 +56,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         AnswerText.text = "stress: " + stress;
+
     }
 
     public void FreezeFrame()
