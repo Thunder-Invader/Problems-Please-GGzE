@@ -65,12 +65,14 @@ public class ScenarioButton
     public bool buttonEnabled;
     public string videoName;
     public string answerText;
+    public bool toEnd;
 
-    public ScenarioButton(string buttonText, bool buttonEnabled, string videoName, string answerText)
+    public ScenarioButton(string buttonText, bool buttonEnabled, string videoName, string answerText, bool toEnd)
     {
         this.buttonText = buttonText;
         this.buttonEnabled = buttonEnabled;
         this.videoName = videoName;
         this.answerText = answerText;
+        this.toEnd = toEnd;
     }
 }
