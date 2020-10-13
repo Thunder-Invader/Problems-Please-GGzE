@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     [SerializeField]
+    private ScenarioSO scenario = default;
+
+    [SerializeField]
     private Text buttonLowText = default;
 
     [SerializeField]
@@ -29,26 +32,17 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     private Animator ani = default;
 
-    //hardcoded
-
-    int stress = 2;
-    int minStress = 0;
-    int maxStress = 4;
+    [SerializeField]
+    private DialoguePlayer videoPlayer = default;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        videoPlayer.SetVideo(scenario.Scenario.startVideoName);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void AddStress(int amount)
-    {
+   public void AddStress(int amount)
+    {/* 
         stress += amount;
         if (!(minStress < stress && maxStress > stress))
         {
@@ -56,7 +50,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         AnswerText.text = "stress: " + stress;
-
+*/
     }
 
     public void FreezeFrame()

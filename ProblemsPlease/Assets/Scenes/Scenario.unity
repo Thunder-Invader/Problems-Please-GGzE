@@ -830,6 +830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4873fbe1690c2fd4bbdecb75127ebfb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scenario: {fileID: 11400000, guid: 5fbed2d93a118a74aa9bce49225a6620, type: 2}
   buttonLowText: {fileID: 1107602459}
   buttonNeutralText: {fileID: 2031983714}
   buttonHighText: {fileID: 908205585}
@@ -838,6 +839,7 @@ MonoBehaviour:
   PreviousText: {fileID: 1204711254}
   AnswerText: {fileID: 967908509}
   ani: {fileID: 843373743}
+  videoPlayer: {fileID: 1583476272}
 --- !u!4 &382366631
 Transform:
   m_ObjectHideFlags: 0

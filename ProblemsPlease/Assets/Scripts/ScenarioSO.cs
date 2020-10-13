@@ -3,18 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "ScenarioMock", menuName = "ScriptableObjects/ScenarioMockSO", order = 1)]
-public class Smock : ScriptableObject
+public class ScenarioSO : ScriptableObject
 {
-    public ScenarioMock ScenarioMock;
+    public Scenario Scenario;
 }
 
 [System.Serializable]
-public class ScenarioMock
+public class Scenario
 {
     public string scenarioName;
     public string scenarioDes;
     public int maxStress; //min stress is 0
     public int startStress;
+    public string startVideoName;
     public string failLowText;
     public string failHighText;
     public string winText;
@@ -23,12 +24,13 @@ public class ScenarioMock
 
     public List<ScenarioPhase> phases;
 
-    public ScenarioMock(string scenarioName, string scenarioDes, int maxStress, int startStress, string failLowText, string failHighText, string winText, int score, string introText)
+    public Scenario(string scenarioName, string scenarioDes, int maxStress, int startStress, string startVideoName, string failLowText, string failHighText, string winText, int score, string introText)
     {
         this.scenarioName = scenarioName;
         this.scenarioDes = scenarioDes;
         this.maxStress = maxStress;
         this.startStress = startStress;
+        this.startVideoName = startVideoName;
         this.failLowText = failLowText;
         this.failHighText = failHighText;
         this.winText = winText;

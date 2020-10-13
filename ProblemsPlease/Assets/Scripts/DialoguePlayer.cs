@@ -34,4 +34,10 @@ public class DialoguePlayer : MonoBehaviour
         yield return new WaitForSeconds(2);
         OnVideoEnd(patientPlayer);
     }
+
+    public void SetVideo(string url)
+    {
+        patientPlayer.url = url;
+        patientPlayer.Play();
+    }
 }

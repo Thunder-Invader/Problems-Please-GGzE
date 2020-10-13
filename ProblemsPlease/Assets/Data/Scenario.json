@@ -1,0 +1,302 @@
+{
+	"scenarioName": "Rij-angst-gesprek",
+	"scenarioDes": "Jane heeft een enorme angst om auto te rijden. Ze praat er niet graag over.  Probeer haar er over te laten vertellen, maar houd haar stress niveau in de gaten. ",
+	"maxStress": 4,
+	"startStress": 1,
+	"startVideoName": "",
+	"failLowText": "Helaas heb je Jane nu niet kunnen confronteren met haar angst. Het ging niet om het handelen van de auto, maar om het omgaan met het verkeer en de onderliggende rij-angst. ",
+	"failHighText": "Jane: ...",
+	"winText": "Je hebt Jane succesvol laten vertellen wanneer haar rij-angst opspeelt.",
+	"score": 0,
+	"introText": "Ja fijn dat we elkaar nu kunnen spreken.",
+	"phases": [
+		{
+			"phaseNumber": 1,
+			"stress": 1,
+			"confrontationPossible": false,
+			"phaseTime": 5,
+			"buttons": [
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Hoe is je rijles gegaan?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "Niet anders dan de vorige keer, het schakelen ging wel goed.",
+					"toEnd": false
+				},
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Vind je het goed als ik je stress laat zien?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				}
+			]
+		},
+		{
+			"phaseNumber": 2,
+			"stress": 1,
+			"confrontationPossible": false,
+			"phaseTime": 10,
+			"buttons": [
+				{
+					"buttonText": "Wat fijn!",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Kun je er iets meer over vertellen?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "Ja, het was niet druk op de weg. Langs het spoor zijn we toen binnendoor weer terug gegaan.",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Vind je het goed als ik je stress laat zien?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				}
+			]
+		},
+		{
+			"phaseNumber": 3,
+			"stress": 2,
+			"confrontationPossible": false,
+			"phaseTime": 10,
+			"buttons": [
+				{
+					"buttonText": "Je kan het rustig na-vertellen. Hoe gaat het nu met je? ",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "Ik voel me wel prima. Zoals ik zei, het was een leuk rondje.",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Het valt me op dat je als je er zo over vertelt je nervositeit lijkt terug te komen. Kun je benoemen wat je nerveus maakte in die rit?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "...ja en natuurlijk die enge brug, de Karel de Grote Brug.",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Maar dan moet je ook over de Karel de Grote brug zijn gegaan. Kun je daar iets meer over vertellen?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "pfff",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Vind je het goed als ik je stress laat zien?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				}
+			]
+		},
+		{
+			"phaseNumber": 4,
+			"stress": 1,
+			"confrontationPossible": false,
+			"phaseTime": 10,
+			"buttons": [
+				{
+					"buttonText": "Mooi, dus het gaat beter",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "De vorige keer gaf je aan dat je wel heel zenuwachtig kon worden. Ben je de afgelopen keer ook nerveus geweest?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "...ja en natuurlijk die enge brug, de Karel de Grote Brug.",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Vind je het goed als ik je stress laat zien?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				}
+			]
+		},
+		{
+			"phaseNumber": 4,
+			"stress": 2,
+			"confrontationPossible": false,
+			"phaseTime": 10,
+			"buttons": [
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Ik zie dat je het spannend vindt om er over te vertellen. Doe maar rustig aan. Neem even een slok water.",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": true
+				},
+				{
+					"buttonText": "De brug? Wat gebeurde er bij de brug?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "Pfff",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Vind je het goed als ik je stress laat zien?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				}
+			]
+		},
+		{
+			"phaseNumber": 5,
+			"stress": 2,
+			"confrontationPossible": false,
+			"phaseTime": 10,
+			"buttons": [
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Ik zie dat je het spannend vindt om er over te vertellen. Doe maar rustig aan. Neem even een slok water.",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": true
+				},
+				{
+					"buttonText": "De brug? Wat gebeurde er bij de brug?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "Pfff",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Vind je het goed als ik je stress laat zien?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				}
+			]
+		},
+		{
+			"phaseNumber": 4,
+			"stress": 3,
+			"confrontationPossible": false,
+			"phaseTime": 10,
+			"buttons": [
+				{
+					"buttonText": "Ik kan zien dat het je weer veel doet als je er zo over praat.",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": true
+				},
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Hoe ben je de brug over gekomen?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Vind je het goed als ik je stress laat zien?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				}
+			]
+		},
+		{
+			"phaseNumber": 5,
+			"stress": 3,
+			"confrontationPossible": false,
+			"phaseTime": 10,
+			"buttons": [
+				{
+					"buttonText": "Ik kan zien dat het je weer veel doet als je er zo over praat.",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": true
+				},
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Hoe ben je de brug over gekomen?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Vind je het goed als ik je stress laat zien?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				}
+			]
+		}
+	]
+}

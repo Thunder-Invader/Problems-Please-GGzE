@@ -6,12 +6,12 @@ public class JsonHandler : MonoBehaviour
 {
 
     [SerializeField]
-    public Smock scenario;
+    private ScenarioSO scenario;
 
     // Start is called before the first frame update
     void Start()
     {
-        string json = JsonUtility.ToJson(scenario.ScenarioMock);
+        string json = JsonUtility.ToJson(scenario.Scenario);
         Debug.Log(json);
     }
 }
