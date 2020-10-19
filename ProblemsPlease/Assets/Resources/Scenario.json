@@ -1,6 +1,7 @@
 {
 	"scenarioName": "Rij-angst-gesprek",
 	"scenarioDes": "Jane heeft een enorme angst om auto te rijden. Ze praat er niet graag over.  Probeer haar er over te laten vertellen, maar houd haar stress niveau in de gaten. ",
+	"patientName": "Jane",
 	"maxStress": 4,
 	"startStress": 1,
 	"startVideoName": "",

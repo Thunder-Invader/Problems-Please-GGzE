@@ -20,8 +20,8 @@ public class DialoguePlayer : MonoBehaviour
 
     public void StartVideo()
     {
-        // patientPlayer.Play();
-        StartCoroutine(Test());
+        patientPlayer.Play();
+        //StartCoroutine(Test());
     }
 
     public void OnVideoEnd(VideoPlayer vp)
@@ -29,11 +29,11 @@ public class DialoguePlayer : MonoBehaviour
         freezeFrame.Invoke();
     }
 
-    private IEnumerator Test()
-    {
-        yield return new WaitForSeconds(2);
-        OnVideoEnd(patientPlayer);
-    }
+    //private IEnumerator Test()
+    //{
+    //    yield return new WaitForSeconds(2);
+    //    OnVideoEnd(patientPlayer);
+    //}
 
     public void SetVideo(string url)
     {

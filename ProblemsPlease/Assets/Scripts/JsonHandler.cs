@@ -11,7 +11,15 @@ public class JsonHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string json = JsonUtility.ToJson(scenario.Scenario);
-        Debug.Log(json);
+        //string json = JsonUtility.ToJson(scenario.Scenario);
+        //Debug.Log(json);
+        ImportScenario();
+    }
+
+    public void ImportScenario()
+    {
+        string path = "Scenario";
+        TextAsset scenarioFile = Resources.Load<TextAsset>(path);
+        scenario.Scenario = JsonUtility.FromJson<Scenario>(scenarioFile.text);
     }
 }

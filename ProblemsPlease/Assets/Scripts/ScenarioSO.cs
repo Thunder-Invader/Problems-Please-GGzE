@@ -13,6 +13,7 @@ public class Scenario
 {
     public string scenarioName;
     public string scenarioDes;
+    public string patientName;
     public int maxStress; //min stress is 0
     public int startStress;
     public string startVideoName;
@@ -24,10 +25,11 @@ public class Scenario
 
     public List<ScenarioPhase> phases;
 
-    public Scenario(string scenarioName, string scenarioDes, int maxStress, int startStress, string startVideoName, string failLowText, string failHighText, string winText, int score, string introText)
+    public Scenario(string scenarioName, string scenarioDes, string patientName, int maxStress, int startStress, string startVideoName, string failLowText, string failHighText, string winText, int score, string introText)
     {
         this.scenarioName = scenarioName;
         this.scenarioDes = scenarioDes;
+        this.patientName = patientName;
         this.maxStress = maxStress;
         this.startStress = startStress;
         this.startVideoName = startVideoName;
