@@ -45,6 +45,12 @@ public class DialogueManager : MonoBehaviour
 
     private ScenarioButton pressedButton = null;
 
+    [SerializeField]
+    private GameObject endButton;
+
+    [SerializeField]
+    private GameObject dialogueButtons;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,8 +65,27 @@ public class DialogueManager : MonoBehaviour
     public void AddStress(int amount)
     {
         pressedButton = currentPhase.buttons[1+amount];
-        
+        if (pressedButton.toEnd)
+        {
+            ActivateEnd(scenario.Scenario.winText);
+            return;
+        }
+        stress += amount;
+        if (stress == 0)
+        {
+            ActivateEnd(scenario.Scenario.failLowText);
+            Debug.Log("Game over: Low stress");
+            return;
+        }
+        if (stress == scenario.Scenario.maxStress)
+        {
+            ActivateEnd(scenario.Scenario.failHighText);
+            Debug.Log("Game over: Too high stress");
+            return;
+        }
 
+        ++phase;
+        videoPlayer.SetVideo(Application.dataPath + "/Videos/" + pressedButton.videoName);
         /* 
         stress += amount;
         if (!(minStress < stress && maxStress > stress))
@@ -114,4 +139,18 @@ public class DialogueManager : MonoBehaviour
         }
         return null;
     }
+
+    public void ActivateEnd(string endText)
+    {
+        endButton.SetActive(true);
+        dialogueButtons.SetActive(false);
+
+        answerText.text = endText;
+    }
+
+    public void EndGame()
+    {
+
+    }
 }
+
