@@ -57,9 +57,15 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     private CountdownTimer timer;
 
+    private int score;
+
+    [SerializeField]
+    private GloomColour gloom;
+
     // Start is called before the first frame update
     void Start()
     {
+        score = scenario.Scenario.maxScore;
         videoPlayer.SetVideo(Application.dataPath + "/Videos/" + scenario.Scenario.startVideoName);
         stress = scenario.Scenario.startStress;
 
@@ -72,6 +78,8 @@ public class DialogueManager : MonoBehaviour
     {
         ani.Play("VideoScaleUp");
 
+        score -= timer.GetCountdown() > 0 ? 10 : 15;
+
         pressedButton = currentPhase.buttons[1+amount];
         if (pressedButton.toEnd)
         {
@@ -80,6 +88,9 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         stress += amount;
+
+        gloom.SetStress(stress, scenario.Scenario.maxStress);
+
         if (stress == 0)
         {
             ActivateEnd(scenario.Scenario.failLowText);
@@ -164,11 +175,14 @@ public class DialogueManager : MonoBehaviour
 
         answerText.text = endText;
         previousText.text += System.Environment.NewLine + System.Environment.NewLine + "Jij: " + pressedButton.buttonText;
+
+        timer.gameObject.SetActive(false);
     }
 
     public void EndGame()
     {
-
+        scenario.Scenario.score = score;
+        Debug.Log(score);
     }
 
     IEnumerator ScrollToBottom()

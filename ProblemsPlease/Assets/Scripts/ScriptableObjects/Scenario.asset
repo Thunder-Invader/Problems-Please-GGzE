@@ -26,7 +26,8 @@ MonoBehaviour:
       en de onderliggende rij-angst. '
     failHighText: 'Jane: ...'
     winText: Je hebt Jane succesvol laten vertellen wanneer haar rij-angst opspeelt.
-    score: 0
+    score: 40
+    maxScore: 100
     introText: Ja fijn dat we elkaar nu kunnen spreken.
     phases:
     - phaseNumber: 1

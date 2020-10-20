@@ -21,11 +21,12 @@ public class Scenario
     public string failHighText;
     public string winText;
     public int score;
+    public int maxScore;
     public string introText;
 
     public List<ScenarioPhase> phases;
 
-    public Scenario(string scenarioName, string scenarioDes, string patientName, int maxStress, int startStress, string startVideoName, string failLowText, string failHighText, string winText, int score, string introText)
+    public Scenario(string scenarioName, string scenarioDes, string patientName, int maxStress, int startStress, string startVideoName, string failLowText, string failHighText, string winText, int score, int maxScore, string introText)
     {
         this.scenarioName = scenarioName;
         this.scenarioDes = scenarioDes;
@@ -37,6 +38,7 @@ public class Scenario
         this.failHighText = failHighText;
         this.winText = winText;
         this.score = score;
+        this.maxScore = maxScore;
         this.introText = introText;
         this.phases = new List<ScenarioPhase>();
     }
