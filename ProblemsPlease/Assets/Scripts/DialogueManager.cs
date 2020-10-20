@@ -51,6 +51,12 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     private GameObject dialogueButtons;
 
+    [SerializeField]
+    private ScrollRect scrollRect;
+
+    [SerializeField]
+    private CountdownTimer timer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -64,10 +70,13 @@ public class DialogueManager : MonoBehaviour
 
     public void AddStress(int amount)
     {
+        ani.Play("VideoScaleUp");
+
         pressedButton = currentPhase.buttons[1+amount];
         if (pressedButton.toEnd)
         {
             ActivateEnd(scenario.Scenario.winText);
+            Debug.Log("End screen");
             return;
         }
         stress += amount;
@@ -99,8 +108,14 @@ public class DialogueManager : MonoBehaviour
 
     public void FreezeFrame()
     {
-        //load correct data.
+        StartCoroutine(ScrollToBottom());
+
         ani.Play("VideoScaleDown");
+
+        if (pressedButton != null && pressedButton.toEnd)
+        {
+            return;
+        }
 
         currentPhase = GetPhase(phase, stress);
         if (currentPhase == null)
@@ -119,6 +134,8 @@ public class DialogueManager : MonoBehaviour
         buttonHighText.transform.parent.gameObject.SetActive(currentPhase.buttons[2].buttonEnabled);
 
         buttonConfrontText.text = currentPhase.buttons[3].buttonText;
+
+        timer.SetDuration(currentPhase.phaseTime);
 
         if (pressedButton == null)
         {
@@ -146,11 +163,18 @@ public class DialogueManager : MonoBehaviour
         dialogueButtons.SetActive(false);
 
         answerText.text = endText;
+        previousText.text += System.Environment.NewLine + System.Environment.NewLine + "Jij: " + pressedButton.buttonText;
     }
 
     public void EndGame()
     {
 
+    }
+
+    IEnumerator ScrollToBottom()
+    {
+        yield return new WaitForEndOfFrame();
+        scrollRect.verticalNormalizedPosition = 0f;
     }
 }
 

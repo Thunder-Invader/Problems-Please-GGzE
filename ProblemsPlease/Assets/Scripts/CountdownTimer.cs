@@ -18,7 +18,6 @@ public class CountdownTimer : MonoBehaviour {
     // Use this for initialization
     void Start () {
         Reset();
-        
     }
 
     public void Reset()
@@ -32,8 +31,6 @@ public class CountdownTimer : MonoBehaviour {
     {
         return countdown;
     }
-
-
 
     private void CountDown()
     {
@@ -52,5 +49,11 @@ public class CountdownTimer : MonoBehaviour {
         timerText.color = newColor.Evaluate(countdown / duration);
         timerVisuals.fillAmount = (countdown / duration);
         timerVisuals.GetComponentsInChildren<Image>()[1].color = alpha.Evaluate(countdown / duration);
+    }
+
+    public void SetDuration(int newDuration)
+    {
+        countdown = newDuration;
+        duration = newDuration;
     }
 }
