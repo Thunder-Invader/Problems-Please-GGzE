@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
     [SerializeField]
     private ScenarioSO scenario = default;
+
+    [SerializeField]
+    private OverviewSO overview = default;
 
     [SerializeField]
     private Text buttonLowText = default;
@@ -62,6 +66,9 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     private GloomColour gloom;
 
+    private int stepsTaken;
+    private List<Answer> answers;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -72,6 +79,9 @@ public class DialogueManager : MonoBehaviour
         conText.text = scenario.Scenario.scenarioDes;
         previousText.text = scenario.Scenario.patientName + ": " + scenario.Scenario.introText;
         answerText.text = scenario.Scenario.patientName + ": " + scenario.Scenario.introText;
+
+        stepsTaken = 0;
+        answers = new List<Answer>();
     }
 
     public void AddStress(int amount)
@@ -79,6 +89,9 @@ public class DialogueManager : MonoBehaviour
         ani.Play("VideoScaleUp");
 
         score -= timer.GetCountdown() > 0 ? 10 : 15;
+        ++stepsTaken;
+        answers.Add(new Answer(pressedButton.buttonText, amount));
+        answers.Add(new Answer(pressedButton.answerText, 3));
 
         pressedButton = currentPhase.buttons[1+amount];
         if (pressedButton.toEnd)
@@ -183,6 +196,8 @@ public class DialogueManager : MonoBehaviour
     {
         scenario.Scenario.score = score;
         Debug.Log(score);
+        overview.Overview = new Overview(stepsTaken, answers);
+        SceneManager.LoadScene(2);
     }
 
     IEnumerator ScrollToBottom()
