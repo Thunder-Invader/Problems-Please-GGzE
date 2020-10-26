@@ -90,10 +90,12 @@ public class DialogueManager : MonoBehaviour
 
         score -= timer.GetCountdown() > 0 ? 10 : 15;
         ++stepsTaken;
+
+        pressedButton = currentPhase.buttons[1 + amount];
+
         answers.Add(new Answer(pressedButton.buttonText, amount));
         answers.Add(new Answer(pressedButton.answerText, 3));
 
-        pressedButton = currentPhase.buttons[1+amount];
         if (pressedButton.toEnd)
         {
             ActivateEnd(scenario.Scenario.winText);
@@ -106,12 +108,14 @@ public class DialogueManager : MonoBehaviour
 
         if (stress == 0)
         {
+            score = 0;
             ActivateEnd(scenario.Scenario.failLowText);
             Debug.Log("Game over: Low stress");
             return;
         }
         if (stress == scenario.Scenario.maxStress)
         {
+            score = 0;
             ActivateEnd(scenario.Scenario.failHighText);
             Debug.Log("Game over: Too high stress");
             return;

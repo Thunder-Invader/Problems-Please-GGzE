@@ -25,10 +25,37 @@ public class OverviewManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI scoreText = default;
 
+    [SerializeField]
+    private Gradient answerColour = default;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        stepsTakenText.text = overview.Overview.StepsTaken.ToString();
+        scoreText.text = scenario.Scenario.score.ToString();
+        foreach (Answer a in overview.Overview.Answers)
+        {
+            Text answer = Instantiate(answerPrefab, answerContainer).GetComponent<Text>();
+            answer.text = a.Text;
+            switch (a.Stress)
+            {
+                case -1:
+                    answer.color = answerColour.Evaluate(0f);
+                    break;
+                case 0:
+                    answer.color = answerColour.Evaluate(0.25f);
+                    break;
+                case 1:
+                    answer.color = answerColour.Evaluate(0.5f);
+                    break;
+                case 2:
+                    answer.color = answerColour.Evaluate(0.75f);
+                    break;
+                default:
+                    answer.color = answerColour.Evaluate(1f);
+                    break;
+            }
+        }
     }
 
     public void GoToScene(int sceneIndex)
