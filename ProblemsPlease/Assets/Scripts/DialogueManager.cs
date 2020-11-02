@@ -96,15 +96,17 @@ public class DialogueManager : MonoBehaviour
         answers.Add(new Answer(pressedButton.buttonText, amount));
         answers.Add(new Answer(pressedButton.answerText, 3));
 
+        stress += amount;
+        gloom.SetStress(stress, scenario.Scenario.maxStress);
+
+        videoPlayer.SetVideo(Application.dataPath + "/Videos/" + pressedButton.videoName);
+
         if (pressedButton.toEnd)
         {
             ActivateEnd(scenario.Scenario.winText);
             Debug.Log("End screen");
             return;
         }
-        stress += amount;
-
-        gloom.SetStress(stress, scenario.Scenario.maxStress);
 
         if (stress == 0)
         {
@@ -122,7 +124,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         ++phase;
-        videoPlayer.SetVideo(Application.dataPath + "/Videos/" + pressedButton.videoName);
+      
         /* 
         stress += amount;
         if (!(minStress < stress && maxStress > stress))
@@ -148,7 +150,7 @@ public class DialogueManager : MonoBehaviour
         currentPhase = GetPhase(phase, stress);
         if (currentPhase == null)
         {
-            Debug.LogError("Error 404 phase does not exist");
+            //Debug.LogError("Error 404 phase does not exist");
             return;
         }
 

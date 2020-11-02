@@ -20,7 +20,7 @@ MonoBehaviour:
     patientName: Jane
     maxStress: 4
     startStress: 1
-    startVideoName: Test1.mov
+    startVideoName: 1.mp4
     failLowText: 'Helaas heb je Jane nu niet kunnen confronteren met haar angst.
       Het ging niet om het handelen van de auto, maar om het omgaan met het verkeer
       en de onderliggende rij-angst. '
@@ -42,7 +42,7 @@ MonoBehaviour:
         toEnd: 0
       - buttonText: Hoe is je rijles gegaan?
         buttonEnabled: 1
-        videoName: Test.mp4
+        videoName: 2.mp4
         answerText: Niet anders dan de vorige keer, het schakelen ging wel goed.
         toEnd: 0
       - buttonText: 
@@ -62,7 +62,7 @@ MonoBehaviour:
       buttons:
       - buttonText: Wat fijn!
         buttonEnabled: 1
-        videoName: 
+        videoName: exit-calm.mp4
         answerText: 
         toEnd: 0
       - buttonText: 
@@ -72,7 +72,7 @@ MonoBehaviour:
         toEnd: 0
       - buttonText: Kun je er iets meer over vertellen?
         buttonEnabled: 1
-        videoName: 
+        videoName: 3.mp4
         answerText: Ja, het was niet druk op de weg. Langs het spoor zijn we toen
           binnendoor weer terug gegaan.
         toEnd: 0
@@ -88,19 +88,19 @@ MonoBehaviour:
       buttons:
       - buttonText: 'Je kan het rustig na-vertellen. Hoe gaat het nu met je? '
         buttonEnabled: 1
-        videoName: 
+        videoName: 4a.mp4
         answerText: Ik voel me wel prima. Zoals ik zei, het was een leuk rondje.
         toEnd: 0
       - buttonText: Het valt me op dat je als je er zo over vertelt je nervositeit
           lijkt terug te komen. Kun je benoemen wat je nerveus maakte in die rit?
         buttonEnabled: 1
-        videoName: 
+        videoName: 4b.mp4
         answerText: ...ja en natuurlijk die enge brug, de Karel de Grote Brug.
         toEnd: 0
       - buttonText: Maar dan moet je ook over de Karel de Grote brug zijn gegaan.
           Kun je daar iets meer over vertellen?
         buttonEnabled: 1
-        videoName: 
+        videoName: 4c.mp4
         answerText: pfff
         toEnd: 0
       - buttonText: Vind je het goed als ik je stress laat zien?
@@ -115,7 +115,7 @@ MonoBehaviour:
       buttons:
       - buttonText: Mooi, dus het gaat beter
         buttonEnabled: 1
-        videoName: 
+        videoName: exit-calm.mp4
         answerText: 
         toEnd: 0
       - buttonText: 
@@ -126,7 +126,7 @@ MonoBehaviour:
       - buttonText: De vorige keer gaf je aan dat je wel heel zenuwachtig kon worden.
           Ben je de afgelopen keer ook nerveus geweest?
         buttonEnabled: 1
-        videoName: 
+        videoName: 4b.mp4
         answerText: ...ja en natuurlijk die enge brug, de Karel de Grote Brug.
         toEnd: 0
       - buttonText: Vind je het goed als ik je stress laat zien?
@@ -147,12 +147,12 @@ MonoBehaviour:
       - buttonText: Ik zie dat je het spannend vindt om er over te vertellen. Doe
           maar rustig aan. Neem even een slok water.
         buttonEnabled: 1
-        videoName: 
+        videoName: exit.mp4
         answerText: 
         toEnd: 1
       - buttonText: De brug? Wat gebeurde er bij de brug?
         buttonEnabled: 1
-        videoName: 
+        videoName: 4c.mp4
         answerText: Pfff
         toEnd: 0
       - buttonText: Vind je het goed als ik je stress laat zien?
@@ -173,12 +173,12 @@ MonoBehaviour:
       - buttonText: Ik zie dat je het spannend vindt om er over te vertellen. Doe
           maar rustig aan. Neem even een slok water.
         buttonEnabled: 1
-        videoName: 
+        videoName: exit.mp4
         answerText: 
         toEnd: 1
       - buttonText: De brug? Wat gebeurde er bij de brug?
         buttonEnabled: 1
-        videoName: 
+        videoName: 4c.mp4
         answerText: Pfff
         toEnd: 0
       - buttonText: Vind je het goed als ik je stress laat zien?
@@ -193,7 +193,7 @@ MonoBehaviour:
       buttons:
       - buttonText: Ik kan zien dat het je weer veel doet als je er zo over praat.
         buttonEnabled: 1
-        videoName: 
+        videoName: exit.mp4
         answerText: 
         toEnd: 1
       - buttonText: 
@@ -203,7 +203,7 @@ MonoBehaviour:
         toEnd: 0
       - buttonText: Hoe ben je de brug over gekomen?
         buttonEnabled: 1
-        videoName: 
+        videoName: exit-stress.mp4
         answerText: 
         toEnd: 0
       - buttonText: Vind je het goed als ik je stress laat zien?
@@ -218,7 +218,7 @@ MonoBehaviour:
       buttons:
       - buttonText: Ik kan zien dat het je weer veel doet als je er zo over praat.
         buttonEnabled: 1
-        videoName: 
+        videoName: exit.mp4
         answerText: 
         toEnd: 1
       - buttonText: 
@@ -228,7 +228,7 @@ MonoBehaviour:
         toEnd: 0
       - buttonText: Hoe ben je de brug over gekomen?
         buttonEnabled: 1
-        videoName: 
+        videoName: exit-stress.mp4
         answerText: 
         toEnd: 0
       - buttonText: Vind je het goed als ik je stress laat zien?
