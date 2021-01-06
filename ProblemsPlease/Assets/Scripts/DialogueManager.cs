@@ -69,9 +69,12 @@ public class DialogueManager : MonoBehaviour
     private int stepsTaken;
     private List<Answer> answers;
 
+    private bool isConfronting;
+
     // Start is called before the first frame update
     void Start()
     {
+        isConfronting = false;
         score = scenario.Scenario.maxScore;
         videoPlayer.SetVideo(Application.dataPath + "/Videos/" + scenario.Scenario.startVideoName);
         stress = scenario.Scenario.startStress;
@@ -136,10 +139,40 @@ public class DialogueManager : MonoBehaviour
 */
     }
 
+    public void HandleConfrontation()
+    {
+        score -= timer.GetCountdown() > 0 ? 5 : 10;
+        ++stepsTaken;
+
+        pressedButton = currentPhase.buttons[3];
+
+        if (currentPhase.confrontationPossible)
+        {
+            answers.Add(new Answer(pressedButton.buttonText, 1));
+            answers.Add(new Answer(pressedButton.answerText, 3));
+            isConfronting = true;
+            videoPlayer.SetVideo(Application.dataPath + "/Videos/" + pressedButton.videoName);
+            ani.Play("VideoScaleUp");
+            previousText.text += System.Environment.NewLine + System.Environment.NewLine + "Jij: " + pressedButton.buttonText + System.Environment.NewLine + System.Environment.NewLine + scenario.Scenario.patientName + ": " + pressedButton.answerText;
+        }
+        else
+        {
+            answers.Add(new Answer(pressedButton.buttonText, 1));
+            answers.Add(new Answer("...", 0));
+            ani.Play("PopUp");
+            StartCoroutine(ScrollToBottom());
+            previousText.text += System.Environment.NewLine + System.Environment.NewLine + "Jij: " + pressedButton.buttonText + System.Environment.NewLine + System.Environment.NewLine + scenario.Scenario.patientName + ": ...";
+        }
+    }
+
     public void FreezeFrame()
     {
         StartCoroutine(ScrollToBottom());
-
+        if (isConfronting)
+        {
+            isConfronting = false;
+            ScenarioButton endButton = GetEndButton();
+        }
         ani.Play("VideoScaleDown");
 
         if (pressedButton != null && pressedButton.toEnd)
@@ -185,6 +218,21 @@ public class DialogueManager : MonoBehaviour
             }
         }
         return null;
+    }
+
+    public ScenarioButton GetEndButton()
+    {
+        foreach (ScenarioPhase p in scenario.Scenario.phases)
+        {
+            foreach (ScenarioButton b in p.buttons)
+            {
+                if (b.toEnd)
+                {
+                    return b;
+                }
+            }
+        }
+        return null; //not handeled, shouldnt be possible
     }
 
     public void ActivateEnd(string endText)

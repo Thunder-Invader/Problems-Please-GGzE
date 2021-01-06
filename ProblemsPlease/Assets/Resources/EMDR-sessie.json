@@ -223,7 +223,7 @@
 					"buttonText": "Ik zie dat dit veel met je doet. Vind je het goed als ik je stress laat zien?",
 					"buttonEnabled": true,
 					"videoName": "emdrconfrontation.mp4",
-					"answerText": "",
+					"answerText": "Ik merk dat ik door gezet heb en mijn angst ben aangegaan.",
 					"toEnd": false
 				}
 			]
@@ -275,14 +275,14 @@
 					"buttonEnabled": false,
 					"videoName": "",
 					"answerText": "",
-					"toEnd": true
+					"toEnd": false
 				},
 				{
 					"buttonText": " Oke, voor vandaag moeten we hem afsluiten. Wat neem voor je positiefs mee uit dit gesprek?",
 					"buttonEnabled": true,
 					"videoName": "emdr-exit.mp4",
 					"answerText": "",
-					"toEnd": false
+					"toEnd": true
 				},
 				{
 					"buttonText": "",
@@ -367,7 +367,7 @@
 					"buttonText": "Ik zie dat dit veel met je doet. Vind je het goed als ik je stress laat zien?",
 					"buttonEnabled": true,
 					"videoName": "emdrconfrontation.mp4",
-					"answerText": "",
+					"answerText": "Ik merk dat ik door gezet heb en mijn angst ben aangegaan.",
 					"toEnd": false
 				}
 			]
@@ -419,14 +419,14 @@
 					"buttonEnabled": false,
 					"videoName": "",
 					"answerText": "",
-					"toEnd": true
+					"toEnd": false
 				},
 				{
 					"buttonText": " Oke, voor vandaag moeten we hem afsluiten. Wat neem voor je positiefs mee uit dit gesprek?",
 					"buttonEnabled": true,
 					"videoName": "emdr-exit.mp4",
 					"answerText": "",
-					"toEnd": false
+					"toEnd": true
 				},
 				{
 					"buttonText": "",
