@@ -1,0 +1,448 @@
+{
+	"scenarioName": "EMDR-sessie",
+	"scenarioDes": "Je gaat nu een gespreksimulatie aan met Sandra.Het is de eerste EMDR-sessie, gericht op de inbraak die ze recent heeft meegemaakt. Sinds die gebeurtenis is ze erg schrikkerig en kan ze zich niet meer ontspannen.Het liefst denkt ze er niet meer aan terug, maar ze zou ook wel graag weer minder angstig zijn thuis. Daarom hebben jullie besloten om EMDR te gaan doen.Probeer haar er over te laten vertellen, maar houd haar stressniveau in de gaten.",
+	"patientName": "Sandra",
+	"maxStress": 5,
+	"startStress": 1,
+	"startVideoName": "emdr1.mp4",
+	"failLowText": "Helaas heb je Sandra nu niet kunnen confronteren met haar angst. ",
+	"failHighText": "Helaas, Sandra's angstniveau liep zo hoog op dat ze de sessie stopt.",
+	"winText": "Dit is het einde van het gesprek. Je hebt Sandra succesvol door de sessie geleid.",
+	"score": 0,
+	"maxScore": 100,
+	"introText": "Ja fijn dat we elkaar nu kunnen spreken.",
+	"phases": [
+		{
+			"phaseNumber": 1,
+			"stress": 1,
+			"confrontationPossible": false,
+			"phaseTime": 5,
+			"buttons": [
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Hoe slaap je sinds ons laatste gesprek?",
+					"buttonEnabled": true,
+					"videoName": "emdr2.mp4",
+					"answerText": "Het ging niet zo goed. Elke keer als ik 's avonds in bed lig, ben ik bij elk geluidje zo bang. Dan is het net of ik weer terug ga naar toen en heb ik het gevoel dat de inbreker zo weer naast mijn bed staat. Daarom stel ik het naar bed gaan steeds langer uit en houd ik alle lampen het liefste aan.",
+					"toEnd": false
+				},
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Vind je het goed als ik je stress laat zien?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				}
+			]
+		},
+		{
+			"phaseNumber": 2,
+			"stress": 1,
+			"confrontationPossible": false,
+			"phaseTime": 10,
+			"buttons": [
+				{
+					"buttonText": "Wat doe je dan meestal als je niet naar bed gaat? ",
+					"buttonEnabled": true,
+					"videoName": "emdr-exit-calm.mp4",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Wat doe je dan meestal als je niet naar bed gaat? Denk eens terug.",
+					"buttonEnabled": true,
+					"videoName": "emdr3.mp4",
+					"answerText": "Dat vind ik wel heel eng, maar ik zal het proberen. Het was nacht en ik lag te slapen toen ik wakker werd van geluiden in huis. Eerst dacht ik dat ik het me verbeeldde maar toen hoorde ik echt duidelijk voetstappen. Dat moment was zo eng, ik wist niet wat me overkwam.",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Vind je het goed als ik je stress laat zien?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				}
+			]
+		},
+		{
+			"phaseNumber": 3,
+			"stress": 2,
+			"confrontationPossible": false,
+			"phaseTime": 10,
+			"buttons": [
+				{
+					"buttonText": " Oke, laten we op die herinnering focussen, Op een schaal van 0 tot 10, hoeveel spanning roept dat dan op?",
+					"buttonEnabled": true,
+					"videoName": "emdr4a.mp4",
+					"answerText": "Hmmm... ik denk een 5.",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Weet je zeker dat dit het meest heftige moment in de film is?",
+					"buttonEnabled": true,
+					"videoName": "emdr4b.mp4",
+					"answerText": "Nou, als de film verder afspeel... nadat ik me realiseerde dat er een inbreker in huis was, bleef ik verstijfd in bed liggen. Ik was zo bang, maar wist niet wat ik moest doen. Toen hoorde ik de stappen dichterbij komen en ging de deurklink naar beneden. Er stapte iemand geheel gekleed in zwarte kleding de kamer binnen. Ik durfde bijna geen adem te halen. Op dat moment wist ik zeker dat ik dood zou gaan. Dat was het allerengste moment dat ik ooit heb meegemaakt.",
+					"toEnd": false
+				},
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Vind je het goed als ik je stress laat zien?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				}
+			]
+		},
+		{
+			"phaseNumber": 4,
+			"stress": 1,
+			"confrontationPossible": false,
+			"phaseTime": 10,
+			"buttons": [
+				{
+					"buttonText": "Oke, dan gaan we hiermee aan de slag",
+					"buttonEnabled": true,
+					"videoName": "emdr-exit-calm.mp4",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "De vorige keer gaf je aan dat je wel heel zenuwachtig kon worden. Ben je de afgelopen keer ook nerveus geweest?",
+					"buttonEnabled": true,
+					"videoName": "emdr4b.mp4",
+					"answerText": "Nou, als de film verder afspeel... nadat ik me realiseerde dat er een inbreker in huis was, bleef ik verstijfd in bed liggen. Ik was zo bang, maar wist niet wat ik moest doen. Toen hoorde ik de stappen dichterbij komen en ging de deurklink naar beneden. Er stapte iemand geheel gekleed in zwarte kleding de kamer binnen. Ik durfde bijna geen adem te halen. Op dat moment wist ik zeker dat ik dood zou gaan. Dat was het allerengste moment dat ik ooit heb meegemaakt.",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Vind je het goed als ik je stress laat zien?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				}
+			]
+		},
+		{
+			"phaseNumber": 4,
+			"stress": 2,
+			"confrontationPossible": false,
+			"phaseTime": 10,
+			"buttons": [
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": true
+				},
+				{
+					"buttonText": "Focus je helemaal op die herinnering dat de inbreker naast je bed staat. Op een schaal van 0 tot 10, hoeveel spanning roept dat dan op?",
+					"buttonEnabled": true,
+					"videoName": "emdr5.mp4",
+					"answerText": "Zeker wel een 9. Ik zie voor me hoe hij me aanvalt. Ik voel me vastgeketend, alsof ik me niet meer kan bewegen. Ik...",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Vind je het goed als ik je stress laat zien?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				}
+			]
+		},
+		{
+			"phaseNumber": 5,
+			"stress": 3,
+			"confrontationPossible": true,
+			"phaseTime": 10,
+			"buttons": [
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": true
+				},
+				{
+					"buttonText": "Oke. Focus je hierop en volg weer mijn vingerbewegingen....Wat komt er nu in je op?",
+					"buttonEnabled": true,
+					"videoName": "emdr6.mp4",
+					"answerText": "Pfff",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Ik zie dat dit veel met je doet. Vind je het goed als ik je stress laat zien?",
+					"buttonEnabled": true,
+					"videoName": "emdrconfrontation.mp4",
+					"answerText": "",
+					"toEnd": false
+				}
+			]
+		},
+		{
+			"phaseNumber": 6,
+			"stress": 4,
+			"confrontationPossible": false,
+			"phaseTime": 10,
+			"buttons": [
+				{
+					"buttonText": "Neem even rustig je tijd en probeer me dan te vertellen wat er in je opkomt",
+					"buttonEnabled": true,
+					"videoName": "emdr7.mp4",
+					"answerText": "Ik voel me zo kwetsbaar. Ik wil schreeuwen maar ik durf niet.",
+					"toEnd": true
+				},
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Hallo Sandra, wat komt er in je op?",
+					"buttonEnabled": true,
+					"videoName": "emdr-exit-stress.mp4",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Vind je het goed als ik je stress laat zien?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				}
+			]
+		},
+		{
+			"phaseNumber": 7,
+			"stress": 3,
+			"confrontationPossible": false,
+			"phaseTime": 10,
+			"buttons": [
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": true
+				},
+				{
+					"buttonText": " Oke, voor vandaag moeten we hem afsluiten. Wat neem voor je positiefs mee uit dit gesprek?",
+					"buttonEnabled": true,
+					"videoName": "emdr-exit.mp4",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Vind je het goed als ik je stress laat zien?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				}
+			]
+		},
+		{
+			"phaseNumber": 5,
+			"stress": 2,
+			"confrontationPossible": false,
+			"phaseTime": 10,
+			"buttons": [
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": true
+				},
+				{
+					"buttonText": "Focus je helemaal op die herinnering dat de inbreker naast je bed staat. Op een schaal van 0 tot 10, hoeveel spanning roept dat dan op?",
+					"buttonEnabled": true,
+					"videoName": "emdr5.mp4",
+					"answerText": "Zeker wel een 9. Ik zie voor me hoe hij me aanvalt. Ik voel me vastgeketend, alsof ik me niet meer kan bewegen. Ik...",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Vind je het goed als ik je stress laat zien?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				}
+			]
+		},
+		{
+			"phaseNumber": 6,
+			"stress": 3,
+			"confrontationPossible": true,
+			"phaseTime": 10,
+			"buttons": [
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": true
+				},
+				{
+					"buttonText": "Oke. Focus je hierop en volg weer mijn vingerbewegingen....Wat komt er nu in je op?",
+					"buttonEnabled": true,
+					"videoName": "emdr6.mp4",
+					"answerText": "Pfff",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Ik zie dat dit veel met je doet. Vind je het goed als ik je stress laat zien?",
+					"buttonEnabled": true,
+					"videoName": "emdrconfrontation.mp4",
+					"answerText": "",
+					"toEnd": false
+				}
+			]
+		},
+		{
+			"phaseNumber": 7,
+			"stress": 4,
+			"confrontationPossible": false,
+			"phaseTime": 10,
+			"buttons": [
+				{
+					"buttonText": "Neem even rustig je tijd en probeer me dan te vertellen wat er in je opkomt",
+					"buttonEnabled": true,
+					"videoName": "emdr7.mp4",
+					"answerText": "Ik voel me zo kwetsbaar. Ik wil schreeuwen maar ik durf niet.",
+					"toEnd": true
+				},
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Hallo Sandra, wat komt er in je op?",
+					"buttonEnabled": true,
+					"videoName": "emdr-exit-stress.mp4",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Vind je het goed als ik je stress laat zien?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				}
+			]
+		},
+		{
+			"phaseNumber": 8,
+			"stress": 3,
+			"confrontationPossible": false,
+			"phaseTime": 10,
+			"buttons": [
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": true
+				},
+				{
+					"buttonText": " Oke, voor vandaag moeten we hem afsluiten. Wat neem voor je positiefs mee uit dit gesprek?",
+					"buttonEnabled": true,
+					"videoName": "emdr-exit.mp4",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "",
+					"buttonEnabled": false,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				},
+				{
+					"buttonText": "Vind je het goed als ik je stress laat zien?",
+					"buttonEnabled": true,
+					"videoName": "",
+					"answerText": "",
+					"toEnd": false
+				}
+			]
+		}
+	]
+}

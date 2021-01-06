@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: ScenarioList
   m_EditorClassIdentifier: 
   Scenarios:
-  - Scenario
+  - Rij-Angst
+  - EMDR-sessie
