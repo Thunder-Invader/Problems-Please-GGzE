@@ -170,9 +170,9 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(ScrollToBottom());
         if (isConfronting)
         {
-            isConfronting = false;
-            ScenarioButton endButton = GetEndButton();
+            HandelConfrontationEnd();
         }
+        
         ani.Play("VideoScaleDown");
 
         if (pressedButton != null && pressedButton.toEnd)
@@ -208,6 +208,23 @@ public class DialogueManager : MonoBehaviour
         previousText.text += System.Environment.NewLine + System.Environment.NewLine + "Jij: " + pressedButton.buttonText + System.Environment.NewLine + System.Environment.NewLine + scenario.Scenario.patientName + ": " + pressedButton.answerText;
     }
 
+    public void HandelConfrontationEnd()
+    {
+        isConfronting = false;
+        pressedButton = GetEndButton();
+
+        answers.Add(new Answer(pressedButton.buttonText, 1));
+        answers.Add(new Answer(pressedButton.answerText, 3));
+
+        videoPlayer.SetVideo(Application.dataPath + "/Videos/" + pressedButton.videoName);
+
+        ani.Play("VideoScaleUp");
+
+        //previousText.text += System.Environment.NewLine + System.Environment.NewLine + "Jij: " + pressedButton.buttonText + System.Environment.NewLine + System.Environment.NewLine + scenario.Scenario.patientName + ": " + pressedButton.answerText;
+
+        ActivateEnd(scenario.Scenario.winText);
+    }
+
     public ScenarioPhase GetPhase(int phase, int stress)
     {
         foreach (ScenarioPhase p in scenario.Scenario.phases)
@@ -226,7 +243,7 @@ public class DialogueManager : MonoBehaviour
         {
             foreach (ScenarioButton b in p.buttons)
             {
-                if (b.toEnd)
+                if (b.toEnd && b.buttonEnabled)
                 {
                     return b;
                 }
