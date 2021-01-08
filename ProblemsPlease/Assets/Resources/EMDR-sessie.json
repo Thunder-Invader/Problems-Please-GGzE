@@ -69,7 +69,7 @@
 					"toEnd": false
 				},
 				{
-					"buttonText": "Wat doe je dan meestal als je niet naar bed gaat? Denk eens terug.",
+					"buttonText": "Ik zou je willen vragen terug te denken aan de imbraak.",
 					"buttonEnabled": true,
 					"videoName": "emdr3.mp4",
 					"answerText": "Dat vind ik wel heel eng, maar ik zal het proberen. Het was nacht en ik lag te slapen toen ik wakker werd van geluiden in huis. Eerst dacht ik dat ik het me verbeeldde maar toen hoorde ik echt duidelijk voetstappen. Dat moment was zo eng, ik wist niet wat me overkwam.",
@@ -177,10 +177,10 @@
 					"toEnd": true
 				},
 				{
-					"buttonText": "Focus je helemaal op die herinnering dat de inbreker naast je bed staat. Op een schaal van 0 tot 10, hoeveel spanning roept dat dan op?",
+					"buttonText": "Oke, wat komt er nu in je op?",
 					"buttonEnabled": true,
 					"videoName": "emdr5.mp4",
-					"answerText": "Zeker wel een 9. Ik zie voor me hoe hij me aanvalt. Ik voel me vastgeketend, alsof ik me niet meer kan bewegen. Ik...",
+					"answerText": "Ik zie voor me hoe hij me aanvalt. Ik voel me vastgeketend, alsof ik me niet meer kan bewegen. Ik...",
 					"toEnd": false
 				},
 				{

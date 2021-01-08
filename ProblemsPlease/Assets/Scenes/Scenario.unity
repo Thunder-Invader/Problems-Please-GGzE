@@ -1964,7 +1964,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1131385868}
   m_HandleRect: {fileID: 1131385867}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 0.99999934
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2235,6 +2235,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  callBackTwo:
+    m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 794985399}
         m_TargetAssemblyTypeName: CountdownTimer, Assembly-CSharp
         m_MethodName: Reset
